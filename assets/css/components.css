@@ -26,14 +26,20 @@
 }
 
 .stat-card {
-  min-height: 142px;
+  min-height: 148px;
   position: relative;
-  padding: 24px 18px 18px;
+  padding: 22px 18px 18px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-white);
   text-align: center;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 38px rgba(15, 23, 42, 0.16);
 }
 
 .stat-card::after {
@@ -49,21 +55,24 @@
 }
 
 .stat-icon {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   display: inline-grid;
   place-items: center;
-  margin-top: -42px;
-  margin-bottom: 14px;
-  border-radius: 50%;
-  background: currentColor;
+  margin: -8px auto 14px;
+  border-radius: 18px;
   color: var(--color-white);
-  font-size: 1.35rem;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+  font-size: 1.7rem;
+  box-shadow:
+    inset -8px -10px 18px rgba(0, 0, 0, 0.18),
+    inset 8px 8px 18px rgba(255, 255, 255, 0.22),
+    0 14px 24px rgba(15, 23, 42, 0.22);
+  transform: rotate(-4deg);
+  transition: transform 0.25s ease;
 }
 
-.stat-icon {
-  color: inherit;
+.stat-card:hover .stat-icon {
+  transform: rotate(0deg) scale(1.08);
 }
 
 .stat-card h2 {
@@ -84,33 +93,53 @@
   color: #08834f;
 }
 
+.stat-green .stat-icon {
+  background: linear-gradient(145deg, #16a34a, #047857);
+}
+
 .stat-blue {
   color: #2b77b8;
+}
+
+.stat-blue .stat-icon {
+  background: linear-gradient(145deg, #38bdf8, #2563eb);
 }
 
 .stat-red {
   color: #e3485c;
 }
 
+.stat-red .stat-icon {
+  background: linear-gradient(145deg, #fb7185, #dc2626);
+}
+
 .stat-orange {
   color: #f28a08;
+}
+
+.stat-orange .stat-icon {
+  background: linear-gradient(145deg, #fbbf24, #f97316);
 }
 
 .stat-purple {
   color: #673ab7;
 }
 
+.stat-purple .stat-icon {
+  background: linear-gradient(145deg, #a78bfa, #6d28d9);
+}
+
 .focus-card {
   min-height: 160px;
   display: grid;
-  grid-template-columns: 72px 1fr 24px;
+  grid-template-columns: 76px 1fr 24px;
   gap: 18px;
   align-items: center;
   padding: 28px;
   border-radius: var(--radius-md);
   background: var(--color-white);
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.07);
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: box-shadow 0.25s ease;
 }
 
 .focus-card:hover {
@@ -138,30 +167,35 @@
 }
 
 .focus-icon {
-  width: 64px;
-  height: 64px;
+  width: 66px;
+  height: 66px;
   display: inline-grid;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 20px;
   color: var(--color-white);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  box-shadow:
+    inset -8px -10px 18px rgba(0, 0, 0, 0.18),
+    inset 8px 8px 18px rgba(255, 255, 255, 0.25),
+    0 16px 28px rgba(15, 23, 42, 0.18);
+  transform: rotate(-5deg);
   transition: transform 0.25s ease;
 }
 
 .focus-card:hover .focus-icon {
-  transform: scale(1.08);
+  transform: rotate(0deg) scale(1.1);
 }
 
 .icon-yellow {
-  background: #f5b51b;
+  background: linear-gradient(145deg, #fde047, #f59e0b);
 }
 
 .icon-red {
-  background: #e3485c;
+  background: linear-gradient(145deg, #fb7185, #e11d48);
 }
 
 .icon-green {
-  background: #129447;
+  background: linear-gradient(145deg, #22c55e, #15803d);
 }
 
 .document-card {

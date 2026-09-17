@@ -10,7 +10,7 @@
 .header-wrapper {
   min-height: 74px;
   display: grid;
-  grid-template-columns: 240px 1fr 44px;
+  grid-template-columns: 300px 1fr 44px;
   align-items: center;
   gap: 24px;
 }
@@ -21,6 +21,7 @@
   gap: 10px;
   color: var(--color-dark);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .brand-icon {
@@ -48,9 +49,11 @@
   display: block;
   margin-top: 3px;
   color: var(--color-dark);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
+  line-height: 1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .main-nav {
@@ -224,12 +227,20 @@
 }
 
 @media (max-width: 620px) {
+  .header-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .search-button {
+    display: none;
+  }
+
   .brand strong {
     font-size: 1.45rem;
   }
 
   .brand small {
-    font-size: 0.62rem;
+    font-size: 0.58rem;
   }
 
   .footer-main {

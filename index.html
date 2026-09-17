@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Portal Departemen HSE</title>
+  <title>HSE Department</title>
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -14,178 +14,263 @@
 <body>
   <header class="site-header">
     <div class="container header-wrapper">
-      <div class="brand">
-        <span class="brand-mark">HSE</span>
-        <div>
-          <h1>Portal Departemen HSE</h1>
-          <p>Health, Safety &amp; Environment</p>
-        </div>
-      </div>
+      <a href="index.html" class="brand" aria-label="HSE Department Home">
+        <span class="brand-icon">✚</span>
+        <span>
+          <strong>HSE</strong>
+          <small>Health • Safety • Environment</small>
+        </span>
+      </a>
 
-      <nav class="main-nav" aria-label="Navigasi utama">
-        <a href="index.html" class="active">Beranda</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
         <a href="#">Profil</a>
-        <a href="#">Program</a>
-        <a href="#">Dokumen</a>
-        <a href="#">Kontak</a>
+        <a href="#">Gallery</a>
+        <a href="#">Announcement</a>
+        <a href="#">Contact</a>
       </nav>
+
+      <button class="search-button" aria-label="Search">⌕</button>
     </div>
   </header>
 
   <main>
     <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Keselamatan adalah prioritas utama</p>
-          <h2>Membangun budaya kerja yang aman, sehat, dan peduli lingkungan.</h2>
-          <p class="hero-text">
-            Portal Departemen HSE digunakan sebagai pusat informasi keselamatan kerja,
-            program HSE, dokumen panduan, dan komunikasi terkait Health, Safety &amp;
-            Environment di lingkungan perusahaan.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#" class="btn btn-primary">Lihat Program HSE</a>
-            <a href="#" class="btn btn-secondary">Dokumen HSE</a>
-          </div>
-        </div>
-
-        <div class="hero-panel">
-          <h3>Statistik HSE</h3>
-
-          <div class="summary-list">
-            <div class="summary-item">
-              <span class="summary-number">128</span>
-              <span class="summary-label">Manpower</span>
-            </div>
-
-            <div class="summary-item">
-              <span class="summary-number">24.560</span>
-              <span class="summary-label">Man Hours</span>
-            </div>
-
-            <div class="summary-item">
-              <span class="summary-number">365</span>
-              <span class="summary-label">Safe Days</span>
-            </div>
-
-            <div class="summary-item">
-              <span class="summary-number">12</span>
-              <span class="summary-label">Near Miss Report</span>
-            </div>
-
-            <div class="summary-item">
-              <span class="summary-number">0</span>
-              <span class="summary-label">Incident Report</span>
-            </div>
-
-            <div class="summary-item">
-              <span class="summary-number">18</span>
-              <span class="summary-label">Hazard Report</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Fokus utama</p>
-          <h2>Area Kerja Departemen HSE</h2>
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <span class="hero-badge">DEPARTEMEN HSE</span>
+          <h1>Health • Safety • Environment</h1>
           <p>
-            Departemen HSE mendukung operasional perusahaan melalui pengelolaan
-            keselamatan, kesehatan kerja, dan perlindungan lingkungan.
+            Together we create a safe, healthy, and sustainable workplace
+            for a better future.
+          </p>
+          <a href="#" class="btn btn-primary">
+            Learn More
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <article class="stat-card stat-green">
+          <div class="stat-icon">♙</div>
+          <h2>Manpower</h2>
+          <strong>1.250</strong>
+        </article>
+
+        <article class="stat-card stat-blue">
+          <div class="stat-icon">◷</div>
+          <h2>Man Hours</h2>
+          <strong>2.450.320</strong>
+        </article>
+
+        <article class="stat-card stat-red">
+          <div class="stat-icon">△</div>
+          <h2>Incident Report</h2>
+          <strong>0</strong>
+        </article>
+
+        <article class="stat-card stat-orange">
+          <div class="stat-icon">▤</div>
+          <h2>Near Miss Report</h2>
+          <strong>18</strong>
+        </article>
+
+        <article class="stat-card stat-purple">
+          <div class="stat-icon">♢</div>
+          <h2>Hazard Report</h2>
+          <strong>42</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="assets/images/about-hse.jpg" alt="HSE safety helmets" />
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">About Us</span>
+          <h2>Welcome to HSE Department</h2>
+          <p>
+            The HSE Department is committed to ensuring every operational
+            activity runs safely, healthily, and environmentally responsible.
+            Safety is our priority, health is our investment, and the
+            environment is our legacy for future generations.
+          </p>
+          <a href="#" class="btn btn-primary">
+            About Us
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus-section">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="section-label">Our Focus</span>
+          <h2>HSE Focus Area</h2>
+          <p>
+            We focus on three main pillars to create a safe, healthy, and
+            sustainable workplace.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Safety</h3>
-            <p>
-              Pengawasan keselamatan kerja, inspeksi area, identifikasi bahaya,
-              dan pencegahan kecelakaan kerja.
-            </p>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <div class="focus-icon icon-yellow">⌂</div>
+            <div>
+              <h3>Safety</h3>
+              <p>
+                Preventing workplace accidents and ensuring every individual
+                is safe in the working environment.
+              </p>
+            </div>
+            <a href="#" aria-label="Safety">→</a>
           </article>
 
-          <article class="feature-card">
-            <h3>Health</h3>
-            <p>
-              Program kesehatan kerja, pemantauan kondisi kerja, edukasi kesehatan,
-              dan kesiapsiagaan medis.
-            </p>
+          <article class="focus-card">
+            <div class="focus-icon icon-red">♡</div>
+            <div>
+              <h3>Health</h3>
+              <p>
+                Maintaining employee health through wellness programs and a
+                healthy working environment.
+              </p>
+            </div>
+            <a href="#" aria-label="Health">→</a>
           </article>
 
-          <article class="feature-card">
-            <h3>Environment</h3>
-            <p>
-              Pengelolaan limbah, kepatuhan lingkungan, efisiensi sumber daya,
-              dan pengendalian dampak lingkungan.
-            </p>
+          <article class="focus-card">
+            <div class="focus-icon icon-green">♧</div>
+            <div>
+              <h3>Environment</h3>
+              <p>
+                Preserving the environment and reducing operational impact on
+                the surrounding ecosystem.
+              </p>
+            </div>
+            <a href="#" aria-label="Environment">→</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-block section-muted">
+    <section class="documentation-section">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Program berjalan</p>
-          <h2>Program HSE</h2>
+        <div class="section-title-row">
+          <div>
+            <span class="section-label">HSE Activity</span>
+            <h2>Activity Documentation</h2>
+          </div>
+
+          <a href="#" class="see-all">View All →</a>
         </div>
 
-        <div class="program-list">
-          <article class="program-item">
-            <span>01</span>
+        <div class="document-grid">
+          <article class="document-card">
+            <img src="assets/images/activity-safety-talk.jpg" alt="Safety talk activity" />
             <div>
-              <h3>Safety Induction</h3>
-              <p>Pengenalan aturan keselamatan untuk karyawan, kontraktor, dan tamu.</p>
+              <h3>Safety Talk</h3>
+              <p>12 September 2025</p>
             </div>
+            <a href="#" aria-label="View Safety Talk">→</a>
           </article>
 
-          <article class="program-item">
-            <span>02</span>
+          <article class="document-card">
+            <img src="assets/images/activity-tree-planting.jpg" alt="Tree planting activity" />
             <div>
-              <h3>Inspeksi Area Kerja</h3>
-              <p>Pemeriksaan rutin untuk memastikan kondisi kerja tetap aman.</p>
+              <h3>Tree Planting</h3>
+              <p>5 September 2025</p>
             </div>
+            <a href="#" aria-label="View Tree Planting">→</a>
           </article>
 
-          <article class="program-item">
-            <span>03</span>
+          <article class="document-card">
+            <img src="assets/images/activity-training.jpg" alt="HSE training activity" />
             <div>
-              <h3>Emergency Response</h3>
-              <p>Kesiapan tim dan prosedur tanggap darurat untuk kondisi kritis.</p>
+              <h3>HSE Training</h3>
+              <p>28 August 2025</p>
             </div>
+            <a href="#" aria-label="View HSE Training">→</a>
           </article>
 
-          <article class="program-item">
-            <span>04</span>
+          <article class="document-card">
+            <img src="assets/images/activity-fire-drill.jpg" alt="Fire drill activity" />
             <div>
-              <h3>Pelaporan Unsafe Condition</h3>
-              <p>Media pelaporan kondisi tidak aman agar dapat segera ditindaklanjuti.</p>
+              <h3>Fire Drill</h3>
+              <p>20 August 2025</p>
             </div>
+            <a href="#" aria-label="View Fire Drill">→</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="container cta-wrapper">
-        <div>
-          <p class="eyebrow">Butuh bantuan HSE?</p>
-          <h2>Hubungi tim HSE untuk konsultasi, pelaporan, atau dukungan lapangan.</h2>
+    <section class="safety-banner">
+      <div class="container banner-wrapper">
+        <div class="banner-mark">
+          <strong>Safety</strong>
+          <span>Starts With</span>
+          <strong>You</strong>
         </div>
 
-        <a href="#" class="btn btn-primary">Hubungi HSE</a>
+        <div class="banner-text">
+          <p>
+            Safety is not only the company's responsibility,
+            but everyone's responsibility.
+          </p>
+          <strong>Work Safe, Go Home Safe</strong>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrapper">
-      <p>&copy; 2026 Portal Departemen HSE. Semua hak dilindungi.</p>
-      <p>Health, Safety &amp; Environment Department</p>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand footer-logo">
+          <span class="brand-icon">✚</span>
+          <span>
+            <strong>HSE</strong>
+            <small>Health • Safety • Environment</small>
+          </span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Link</h3>
+        <a href="index.html">Home</a>
+        <a href="#">Profil</a>
+        <a href="#">Gallery</a>
+        <a href="#">Announcement</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>hse@company.co.id</p>
+        <p>+62 21 1234 5678</p>
+        <p>Jakarta, Indonesia</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div>
+          <a href="#">f</a>
+          <a href="#">ig</a>
+          <a href="#">in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 HSE Department. All rights reserved.</p>
+      <p>Together for a Safer, Healthier and Greener Future</p>
     </div>
   </footer>
 </body>

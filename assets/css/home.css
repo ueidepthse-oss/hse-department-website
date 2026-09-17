@@ -2,7 +2,7 @@
   min-height: 300px;
   background:
     linear-gradient(90deg, rgba(4, 18, 34, 0.78), rgba(4, 18, 34, 0.28)),
-    url("../images/hero-hse.jpg");
+    url("../images/hero-hse.webp");
   background-size: cover;
   background-position: center;
 }
@@ -149,7 +149,7 @@
   align-items: center;
   background:
     linear-gradient(90deg, rgba(7, 18, 32, 0.88), rgba(7, 18, 32, 0.42)),
-    url("../images/banner-safety.jpg");
+    url("../images/banner-safety.webp");
   background-size: cover;
   background-position: center;
   color: var(--color-white);
